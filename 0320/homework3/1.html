@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Input your grade and click the button:</p>
+
+<input id="grade" value="60" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var grade, voteable;
+  grade = document.getElementById("grade").value;
+  voteable = (grade < 60) ? "沒及格" : "有及格";
+  document.getElementById("demo").innerHTML = voteable ;
+}
+</script>
+
+</body>
+</html>
